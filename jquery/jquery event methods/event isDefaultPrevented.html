@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event.isDefaultPrevented()</title>
+    <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<a href="http://www.google.com">google</a>
+  <script>
+    $(document).ready(function (){
+      $("a").click(function (event){
+        event.preventDefault();
+        alert("Was preventDefault() called: " + event.isDefaultPrevented)
+      });
+    });
+  </script>
+</body>
+</html>

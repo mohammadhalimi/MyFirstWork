@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event current target</title>
+  <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<h1>header 1</h1>
+<h2>header 2</h2>
+<p><b>Note:</b> Click on each HTML element. The currentTarget is typically equal to "this", and will return "true".</p>
+<script>
+  $(document).ready(function(){
+    $("h1, h2, p").click(function(event){
+      alert(event.currentTarget === this);
+    });
+  });
+</script>
+</body>
+</html>

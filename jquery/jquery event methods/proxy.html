@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>proxy</title>
+  <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<p></p>
+<button>test</button>
+<script>
+  $(document).ready(function (){
+    var human = {
+      name : "moammad" ,
+      lastname : "halimi" ,
+      age : 21 ,
+      test : function (){
+        $("p").append("name: " + this.name + "  last name: " + this.lastname + "  age: " + this.age )
+      }
+    }
+    $("button").click($.proxy(human ,"test"))
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> scroll</title>
+  <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<p style="position: fixed ; background-color: yellow">time scroll:  <span>0</span></p>
+<br><br><br><br><br><br><br><br><br>x<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>x<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>x<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>x<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>x<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>x<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>x<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>x<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>x<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>x<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>x<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>x<br><br><br><br><br><br><br><br><br>
+<script>
+  var x=0;
+  $(document).ready(function(){
+    $(window).scroll(function (){
+      $("span").text(x+=1);
+    })
+  })
+</script>
+</body>
+</html>

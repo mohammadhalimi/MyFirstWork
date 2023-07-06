@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq_js1</title>
+  <script src="jquery-3.6.0.js"></script>
+  <style>
+    div{
+      margin: 5px;
+      padding: 3px;
+      background-color: #b1aeae;
+      border-radius: 5px;
+      border: 3px dashed rebeccapurple;
+    }
+    input{
+      margin: 5px;
+      padding: 3px;
+      font-size: 15px;
+      font-family: "Bookman Old Style";
+      color: #cc5ef1;
+      background-color: #f6d1ab;
+      border-radius: 5px;
+    }
+    button{
+      border-radius: 5px;
+      color: #8e2bea;
+      background-color: #eeeeee;
+      font-size: 20px;
+      padding: 5px;
+      margin-left: 5px;
+
+    }
+    p{
+      background-color: lightcyan;
+      color: #ff747c;
+      font-size: x-large;
+      font-family: Algerian;
+      border-radius: 5px;
+      width: 800px;
+      margin: 5px;
+      padding: 3px;
+    }
+    body{
+      background-color: #eeeeee;
+    }
+
+  </style>
+
+</head>
+<body>
+<div id="box1">
+  <p id="p1">pargraph 1</p>
+  <p id="p2">pargraph 2</p>
+  <p id="p3">pargraph 3</p>
+  <input id="inp1" type="text" value="mohammad halimi">
+</div>
+<button id="btn1"> Okay </button>
+
+<script>
+  $(document).ready(function (){
+    $("#btn1").click(function (){
+   /*    alert($("#box1").html())
+      alert($("#box1").text())
+      alert($("#inp1").val())
+      alert($("#p1").attr('id'))
+      alert($("#p2").attr('id'))
+      alert($("#p3").attr('id'))
+      alert($("#inp1").attr('type'))
+      alert($("#box1").attr('id'))
+     */
+ /*   $("#p3").text("mmd");
+    $("#p2").html("radio");
+    $("#p1").html("tv");
+    $("#inp1").attr('type' , 'password');
+    $("#inp1").val('www.21learn.com');
+        */
+/*  $("#p1").append(" www.21learn.com");
+   $("#p2").prepend(" www.21learn.com ");
+   $("#p2").append(" www.21learn.com ");
+   $("#inp1").before('www.21learn.com');
+   $("#inp1").after('www.21learn.com');
+
+ */
+  /*      $("#p1").remove();
+        $("#p2").empty();
+
+   */
+    //    $("#p1").css({color:'yellow' , fontFamily: 'b nazanin'})
+        $(#p1).removeClass('p')
+     });
+
+   });
+
+
+</script>
+</body>
+</html>

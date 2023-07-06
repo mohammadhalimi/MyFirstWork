@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event namespace</title>
+    <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<p>Click on this paragraph.</p>
+
+<button>Remove namespace</button>
+<script>
+  $(document).ready(function (){
+    $("p").on("custom.someNamespace" , function (event){
+      alert(event.namespace);
+    })
+    $("p").click(function (event){
+      $(this).trigger("custom.someNamespace")
+    });
+    $("button").click(function (){
+      $("p").off("custom.someNamespace");
+
+    })
+  });
+</script>
+</body>
+</html>

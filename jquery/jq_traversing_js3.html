@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq_traversing_js3</title>
+  <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<div class="div1">
+  <ul>
+    <li class="li1">
+
+      <span class="span1 ok">span 1</span>
+      <span class="span2 ok">span 2</span>
+      <span class="span3 ok">span 3</span>
+      <span class="span4 ok">span 4</span>
+    </li>
+    <li class="li2">
+      <b>bold text 1</b>
+    </li>
+  </ul>
+</div>
+<script>
+//  alert($(".span2").parent().html())
+//    alert($(".span2").parent().parent().html())
+ //     document.write($(".span2").parents().length)
+ //        document.write($(".span2").parentsUntil(".div1").length)
+ // alert($(".span1").siblings().length)
+  // alert($(".span1").next().length)
+// alert($(".span1").nextAll().length)
+// alert($(".span1").nextUntil(".span4").length)
+// alert($(".span4").prev().length)
+// alert($(".span4").prevAll().length)
+ //  alert($(".span4").prevUntil(".span1").text())
+// document.writeln($(".li1 span").first().html())
+// document.writeln($(".li1 span").last().html())
+// document.writeln($(".li1 span").eq(2).html())
+// document.writeln($(".li1 span").not(".span3").text())
+// document.writeln($(".li1 span").filter(".span3 , .span2").text())
+/*   if ($(".li1 span").hasClass("ok")){
+document.writeln($(".li1 span").filter(function (){
+   return true;
+ } else {
+   return false;
+ }
+}).length
+) */
+ // document.write($(".span2").is("span"))
+// document.write($(".span2").index())
+/* var spans= $(".li1 span").toArray()
+document.write(spans.length)
+document.write(spans[2].innerHTML) */
+</script>
+
+</body>
+</html>

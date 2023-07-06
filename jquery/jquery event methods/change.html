@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>change</title>
+  <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<input type="text" value="7learn">
+<p>Write something in the input field, and then press enter or click outside the field.</p>
+<script>
+  $(document).ready(function (){
+    $("input").change(function (){
+      alert("The text has been changed.");
+    });
+  });
+</script>
+</body>
+</html>

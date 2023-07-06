@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hover</title>
+  <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<p style="background: #b1aeae; color: black ; border: 1px solid #557bae ; padding-left:650px ; font-size: xxx-large">Hover the mouse pointer over this paragraph.</p>
+<script>
+  $(document).ready(function (){
+    $("p").hover(function (){
+      $(this).css('opacity' , '0.5')
+    } , function (){
+      $(this).css('opacity' , '1')
+    })
+  })
+</script>
+</body>
+</html>

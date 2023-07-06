@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mouseenter()</title>
+  <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<p>Move the mouse pointer over this paragraph.</p>
+<script>
+  $(document).ready(function (){
+    $("p").mouseenter(function (){
+      $(this).css({background:'red'})
+    })
+    $("p").mouseleave(function (){
+      $(this).css({background: 'yellow'})
+    })
+  })
+</script>
+</body>
+</html>

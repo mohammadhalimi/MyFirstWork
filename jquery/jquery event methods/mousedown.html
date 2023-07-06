@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mousedown()</title>
+  <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<div>Press down and release the mouse button over this div element.</div>
+<script>
+  $(document).ready(function (){
+    $("div").mousedown(function (){
+      $(this).after("<p style='color:purple;'>Mouse button pressed down.</p>")
+    })
+    $("div").mouseup(function (){
+      $(this).after("<p style='color:goldenrod;'>Mouse button pressed up.</p>")
+    })
+  })
+</script>
+</body>
+</html>

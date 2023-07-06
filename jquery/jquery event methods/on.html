@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>on</title>
+  <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<p>this is paragraph</p><br>
+<button>off</button>
+<script>
+  $(document).ready(function (){
+    $("p").on("click" , function (){
+      $(this).css({backgroundColor:"yellow"})
+    })
+    $("button").click(function (){
+      $("p").off("click")
+    })
+  })
+</script>
+</body>
+</html>

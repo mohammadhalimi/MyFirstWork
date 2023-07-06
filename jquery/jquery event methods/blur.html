@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>blur</title>
+  <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<input type="text">
+<p>Write something in the input field, and then click outside the field to lose focus (blur).</p>
+<script>
+    $("input").blur(function (){
+        alert("This input field has lost its focus.")
+    });
+</script>
+</body>
+</html>

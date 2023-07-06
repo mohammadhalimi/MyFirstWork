@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>one</title>
+  <script src="jquery-3.6.0.js"></script>
+  <style>
+
+  </style>
+</head>
+<body>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p>Click any p element to increase its text size. The event will only trigger once for each p element.</p>
+<script>
+  $(document).ready(function(){
+    $("p").one("mouseenter", function(){
+      $(this).animate({fontSize: "+=6px"});
+    });
+      $("p").one("mouseleave", function(){
+          $(this).animate({fontSize: "-=6px"});
+      });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+    <script src="jquery-3.6.0.js"></script>
+    <style>
+       div{
+           background-color: #b1aeae;
+           width: 455px;
+           margin-left: 700px;
+           margin-top: 100px;
+           border-radius: 5px;
+       }
+       button{
+           font-size: x-large;
+           margin-left: 60px;
+           padding: 5px;
+           background-color: #eeeeee;
+           margin-top: 5px;
+           width: 70px;
+           border-radius: 5px;
+       }
+       #btn0{
+           margin-left: 195px;
+           margin-bottom: 5px;
+       }
+       input{
+           margin-left: 5px;
+           margin-top: 5px;
+           border-radius: 5px;
+           height: 20px;
+       }
+       select{
+           margin-left: 4px;
+       }
+       #result{
+           color: red;
+           font-size: x-large;
+           margin-left: 225px;
+       }
+       #cal{
+           text-align: center;
+           font-size: xxx-large;
+           font-family: javan;
+
+       }
+    </style>
+</head>
+<body>
+<p id="cal">calculator</p>
+<div>
+    <input id="inp1" type="text">
+    <select id="sel">
+        <option>selected</option>
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select>
+    <input id="inp2" type="text"><br>
+    <button id="one">1</button> <button id="two">2</button> <button id="three">3</button><br>
+    <button id="four">4</button> <button id="five">5</button> <button id="six">6</button><br>
+    <button id="seven">7</button> <button id="eight">8</button> <button id="nine">9</button><br>
+                       <button id="btn0">0</button> <button id="pro">=</button>
+    <p id="result"></p>
+</div>
+<script>
+    $(document).ready(function (){
+       $("#one , #two , #three ,#four ,#five ,#six ,#seven ,#eight ,#nine , #btn0").click(function (){
+           $("#inp1").val(this.innerHTML )
+       })
+        $("#one , #two , #three ,#four ,#five ,#six ,#seven ,#eight ,#nine , #btn0").one("mouseenter" , function (){
+            $("#inp2").val(this.innerHTML)
+        })
+
+
+        $("#pro").click(function (event){
+            event.preventDefault()
+            $("#result").html(eval($("#inp1").val() + $("#sel").val() + $("#inp2").val() ))
+        })
+    })
+</script>
+</body>
+</html>

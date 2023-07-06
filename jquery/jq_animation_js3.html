@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq_animation_js3</title>
+    <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<button class="btn1" style="background-color: yellow ; padding: 10px ; border-radius: 10px; font-size: x-large">okay</button>
+<button class="btn2" style="background-color: red ; padding: 10px ; border-radius: 10px; font-size: x-large ; color: #fcfcfc">stop</button>
+<button class="btn3" style="background-color: blue ; padding: 10px ; border-radius: 10px; font-size: x-large ; color: #fcfcfc">finish</button>
+<div class="div1" style="background-color: #de8ed2; height: 200px ; margin-top: 5px ; border-radius: 10px; color: lightcyan ; display: none ">
+  mml  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+  mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml mml
+</div>
+<script>
+  $(".btn1").click(function (){
+  //  $(".div1").hide(2000);
+   // $(".div1").show(2000);
+  //  $(".div1").toggle(2000);
+  //  $(".div1").fadeIn(2000);
+   // $(".div1").fadeOut(2000);
+ //   $(".div1").fadeToggle(2000);
+   // $(".div1").fadeTo(2000 , 0.5);
+   // $(".div1").slideUp(2000);
+  //  $(".div1").slideDown(2000);
+    $(".div1").slideToggle(2000).delay(2000).fadeIn(2000);
+
+
+  })
+  $(".btn2").click(function (){
+    $(".div1").stop();
+          }
+  )
+  $(".btn3").click(function (){
+            $(".div1").finish();
+          }
+  )
+</script>
+</body>
+</html>

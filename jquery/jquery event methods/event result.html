@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event.result </title>
+    <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<button>Click me to display event.result</button>
+
+<p>This is a paragraph.</p>
+<script>
+  $(document).ready(function (){
+    $("button").click(function (){
+      return "hello world";
+    });
+    $("button").click(function (event){
+      $("p").html(event.result);
+    })
+  });
+</script>
+</body>
+</html>

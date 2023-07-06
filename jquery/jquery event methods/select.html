@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>select</title>
+  <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<input type="text" value="hello">
+<p>this is paragraph</p>
+<script>
+  $(document).ready(function (){
+    $("input").select(function (){
+      alert("this tag p is selected")
+    })
+  })
+</script>
+</body>
+</html>
